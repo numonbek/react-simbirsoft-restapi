@@ -1,0 +1,38 @@
+// !COLORS
+$white: #fff;
+$black: #121212;
+$black-def: #000;
+$gray: #999999;
+$gray-light: #EEEEEE;
+$bg-nav: #111518;
+$green: #0EC261;
+$bg-opacity:  #151B1FCF;
+
+/* btn */
+$green-def: linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
+$green-hover: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+$green-active: linear-gradient(90deg, #076432 2.61%, #013C27 112.6%);
+$green-select: linear-gradient(90deg, #0B934A 2.61%, #026E47 112.6%);
+$green-load:linear-gradient(90deg, #0EC261 2.61%, #039F67 112.6%);
+
+/* color slide */
+$btn-insurance: linear-gradient(90deg, #132949 0%, #0C7B67 100%);
+$btn-business: linear-gradient(90deg, #493013 0%, #7B0C3B 100%);
+$btn-service: linear-gradient(90deg, #281349 0%, #720C7B 100%);
+$btn-parking: linear-gradient(90deg, #13493F 0%, #0C7B1B 100%);
+
+/* bg slide fade */
+$fade:linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+
+// !FONTS
+$font-family-Roboto: "Roboto", sans-serif;
+
+// !SIZE
+$maxWidth: 1920;
+
+// !BREACKPOINTS
+$maxWidthContainer: 1300;
+
+
+// !Transition
+$transition: 0.3s all;

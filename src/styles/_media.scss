@@ -1,0 +1,165 @@
+/* desktop */
+@media (max-width: 1950px){
+    .container{
+        max-width: 1950px;
+    }
+    .navbar-active{
+        .navbar{
+           max-width: 52.5%;            
+        }
+    }
+}
+/* desktop-min */
+@media (max-width: 1440px){
+  
+}
+/* tablet */
+@media screen and (max-width: 1024px){
+    .navbar-active{
+        .navbar{
+           max-width: rem(614);            
+        }
+    }
+    .home{
+        &-left{
+            // padding: 32px 0;
+            margin: 0 auto;
+            width: 57.5%;
+            // min-width: 550px;
+        }
+        &-right{
+            max-width: 410px;
+            width: 100%;
+        }
+    }
+    
+
+}
+/* mobile */
+@media (max-width: 768px){
+    .home{
+        &-left{            
+            width: 100%;
+
+        }
+        &-right{
+            display: none;
+        }
+    }
+
+}
+@media (max-width: 600px){}
+@media (max-width: 500px){}
+@media (max-width: 400px){
+
+    .container{
+        margin-left: -70px;
+    }
+    .header{
+        flex-direction: column;
+        align-items: end;
+        &-title{
+            font-size: 30px;
+            line-height: 35px;
+            text-align: right;
+        }
+    }
+    .location{
+        &-city{
+            font-size: 14px;
+            line-height: 16px;
+        }
+    }
+    .navbar{
+        max-width: 0;
+        align-items:flex-start;
+        justify-content: flex-start;
+        &-block{
+            padding: 80px 28px;
+            position: relative;
+            left: 0;
+        }
+
+        h3{
+            // font-style: normal;
+            // font-weight: 500;
+            font-size: 22px;
+            line-height: 40px;
+        }
+    }
+    .navbar-active{
+        .burger{
+            & span{
+                background: $white;
+            }
+        }
+    }
+
+    .burger{
+        & span{
+            background: $black;
+        }
+    }
+    .home{
+        &-title{
+            padding-top: 33px;
+            .description{
+                padding-top: 16px;
+            }
+            .button{
+                padding-top: 32px;
+            }
+            
+        }
+    }
+    .footer{
+        position: fixed;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: flex-end;
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        background: black;
+        min-height: 72px;
+        padding: 0 15px;
+        & h6{
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 13px;
+            line-height: 15px;
+        }
+        .corp{
+            h6{              
+                color: $gray-light;
+                padding-top: 8px;
+            }
+        }
+        .callback{
+            h6{              
+                color: $green;
+                padding-top: 8px;
+            }
+        }
+    }
+
+    .button{
+        display: block;
+        position: fixed;      
+        width: 100%;
+        left: 0;
+      
+    }
+    .btn--wl{
+        border-radius: 0;
+        max-width: 100%;
+    }
+
+
+}
+
+@media (max-width: 320px){
+
+
+}

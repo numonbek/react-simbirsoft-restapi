@@ -1,0 +1,43 @@
+/* home */
+.home{
+    display: flex;
+    overflow: hidden;
+    &-left{
+        margin: 0 auto;        
+        width: 50%;
+        height: 100vh;
+    }
+    &-right{
+        width: 50%;
+    }
+    &-block{       
+        height: 100%;
+        max-width: 84%;
+        margin: 0 auto;
+        position: relative;     
+        padding-top: 32px;      
+        z-index:-1;
+        .button{
+            padding-top: rem(60);
+        }
+    }
+    &-title{   
+        padding-top: rem(163);
+        .title{
+            & h1:not(:first-child){
+                padding-top: rem(5);
+            }
+        }
+    }
+    
+}
+
+.description{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    @include adaptiv-value("font-size", 26, 16, 1);
+    @include adaptiv-value(" line-height", 30, 20, 1);
+    color: $gray;
+    padding-top: rem(34);
+}    

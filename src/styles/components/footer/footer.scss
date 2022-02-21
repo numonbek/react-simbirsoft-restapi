@@ -1,0 +1,16 @@
+/* footer */
+.footer{
+    position: absolute;
+    width: 100%;
+    bottom: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    /* max-width: 84%; */
+
+    // padding-top: rem(228);
+}
+.callback{
+    color: $black;
+}

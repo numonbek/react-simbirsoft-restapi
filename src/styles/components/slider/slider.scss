@@ -1,0 +1,76 @@
+/* slider */
+.slider{}
+
+/* swiper */
+.swiper{
+    height: 100vh;
+    
+}
+.swiper-pagination-bullet{
+    background: $gray-light;
+    opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background: $green;
+    opacity: 1;
+}
+.navbar-active{
+    .swiper{
+        z-index: -1 !important;
+    }
+}
+/*button next-prev  */
+.button-next, .button-prev{
+    height: 100vmax;   
+    width: 50px;      
+    top: 50%;
+    transform: translateY(-50%);   
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color:#0EC26133;  
+       
+    } 
+}
+.button{
+    &-prev{
+        left: 0;    
+    }
+    &-next{
+        right: 0;   
+    }
+}
+
+/* slide-services */
+.slide-services{
+    &__bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;    
+    }
+    &__container{
+        position: absolute;
+        top: 30%;
+        left: 15%;
+        max-width: rem(495);
+        margin-right: rem(64);
+    }
+    &__block{
+        margin-bottom: rem(32);
+        color:$white;
+        .title{}
+        .description{
+            padding-top: rem(8);
+            color:$gray-light;
+            @include adaptiv-value("font-size", 24, 22, 1);
+            @include adaptiv-value("line-height", 22, 18, 1);
+        }
+    }
+}
+.slide-fade{
+    background: $fade;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    
+}

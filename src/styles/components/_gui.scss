@@ -1,0 +1,74 @@
+/* button */
+.btn{
+    padding: rem(15) rem(10) rem(11);
+    background: $green-def;
+    box-shadow: 0px 2px 4px rgba(90, 97, 105, 0.12);
+    background-blend-mode: darken;
+    border:0;
+    outline: none;
+    border-radius: 8px;
+    color: $white;
+    min-height: 48px;
+    cursor:pointer;
+    /* font-style */
+    font-family: $font-family-Roboto;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    @include adaptiv-value("font-size", 18, 14, 1);
+    @include adaptiv-value("line-height", 21, 18, 1);  
+    &--ws{
+        // max-width: 160px;
+    }
+    &--wm{
+        max-width: rem(164);
+        border-radius: rem(4);
+    }
+    &--wl{
+        max-width: rem(250);
+    }
+    &--hs{
+        // max-width: rem(160);
+    }
+    &--hm{}
+    &--hl{}
+    &--parking{
+        background: $btn-parking;
+    }
+    &--service{
+        background: $btn-service;
+    }
+    &--business{
+        background: $btn-business;
+    }
+    &--insurance{
+        background: $btn-insurance;
+    }
+    &:hover{
+        background: $green-hover;
+    }
+    &:active{
+        background: $green-active;
+    }
+}
+button:disabled,
+button[disabled]{
+  background: $gray-light;
+
+}
+
+
+/* svg */
+svg{
+    cursor: pointer;  
+    &:hover{      
+        path{
+            transition: all 0.5s ease-in;
+            fill: $green;
+        }
+    }
+}
