@@ -16,7 +16,7 @@
         margin: 0 auto;
         position: relative;     
         padding-top: 32px;      
-        z-index:-1;
+        // z-index:-1;
         .button{
             padding-top: rem(60);
         }
@@ -41,3 +41,10 @@
     color: $gray;
     padding-top: rem(34);
 }    
+
+/* navbar active */
+.navbar-active{
+    .home-block{
+        z-index:-1;
+    }
+}
