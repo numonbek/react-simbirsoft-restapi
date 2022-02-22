@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-simbirsoft-restapi/static/css/main.4092d91f.css",
-    "main.js": "/react-simbirsoft-restapi/static/js/main.208d05dd.js",
+    "main.js": "/react-simbirsoft-restapi/static/js/main.47188704.js",
     "static/media/car-04.png": "/react-simbirsoft-restapi/static/media/car-04.be695f13b9b2c5c7bf11.png",
     "static/media/car-03.png": "/react-simbirsoft-restapi/static/media/car-03.4e22dc96c90ef96e85e6.png",
     "static/media/car-01.png": "/react-simbirsoft-restapi/static/media/car-01.9369f2aaab71089a15e4.png",
@@ -10,18 +10,18 @@
     "static/media/Roboto-Regular.ttf": "/react-simbirsoft-restapi/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
     "static/media/Roboto-Bold.ttf": "/react-simbirsoft-restapi/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
     "static/media/Roboto-Light.ttf": "/react-simbirsoft-restapi/static/media/Roboto-Light.8be2d1487420548b3b8d.ttf",
-    "static/media/instagram.svg": "/react-simbirsoft-restapi/static/media/instagram.98094ec43567d0a8402f1c6fe5f9c96c.svg",
-    "static/media/telegram.svg": "/react-simbirsoft-restapi/static/media/telegram.e8137bbee4b573f3f5a8ef5e337c2bec.svg",
+    "static/media/instagram.svg": "/react-simbirsoft-restapi/static/media/instagram.5e14e95a222191ed7fb3890c7e06ce56.svg",
+    "static/media/telegram.svg": "/react-simbirsoft-restapi/static/media/telegram.09f73cfe1b599430658800e3f4daa961.svg",
     "index.html": "/react-simbirsoft-restapi/index.html",
-    "static/media/map.svg": "/react-simbirsoft-restapi/static/media/map.9d09636f7eb2935d74c761d4bad1a609.svg",
-    "static/media/facebook.svg": "/react-simbirsoft-restapi/static/media/facebook.c1876cc3ac4c922d5a127a847417f903.svg",
-    "static/media/nextArrow.svg": "/react-simbirsoft-restapi/static/media/nextArrow.9d87137d3cdc657274dc93047421f39a.svg",
-    "static/media/prevArrow.svg": "/react-simbirsoft-restapi/static/media/prevArrow.dd0226d1ef40f8836d758d1d948bcb88.svg",
+    "static/media/map.svg": "/react-simbirsoft-restapi/static/media/map.6d4a93c7018dc81ea6ae0fc666b48620.svg",
+    "static/media/facebook.svg": "/react-simbirsoft-restapi/static/media/facebook.01c0ca6ad0dd74a76e52b61aad44deac.svg",
+    "static/media/nextArrow.svg": "/react-simbirsoft-restapi/static/media/nextArrow.7591c327fb5160f95b31d713c84e5cc5.svg",
+    "static/media/prevArrow.svg": "/react-simbirsoft-restapi/static/media/prevArrow.1752ae9160db5265a941d6120fcaeadb.svg",
     "main.4092d91f.css.map": "/react-simbirsoft-restapi/static/css/main.4092d91f.css.map",
-    "main.208d05dd.js.map": "/react-simbirsoft-restapi/static/js/main.208d05dd.js.map"
+    "main.47188704.js.map": "/react-simbirsoft-restapi/static/js/main.47188704.js.map"
   },
   "entrypoints": [
     "static/css/main.4092d91f.css",
-    "static/js/main.208d05dd.js"
+    "static/js/main.47188704.js"
   ]
 }
