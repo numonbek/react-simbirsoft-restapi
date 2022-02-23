@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/react-simbirsoft-restapi/static/css/main.bbe8c285.css",
+    "main.css": "/react-simbirsoft-restapi/static/css/main.afeae0fc.css",
     "main.js": "/react-simbirsoft-restapi/static/js/main.47188704.js",
     "static/media/car-04.png": "/react-simbirsoft-restapi/static/media/car-04.be695f13b9b2c5c7bf11.png",
     "static/media/car-03.png": "/react-simbirsoft-restapi/static/media/car-03.4e22dc96c90ef96e85e6.png",
@@ -17,11 +17,11 @@
     "static/media/facebook.svg": "/react-simbirsoft-restapi/static/media/facebook.01c0ca6ad0dd74a76e52b61aad44deac.svg",
     "static/media/nextArrow.svg": "/react-simbirsoft-restapi/static/media/nextArrow.7591c327fb5160f95b31d713c84e5cc5.svg",
     "static/media/prevArrow.svg": "/react-simbirsoft-restapi/static/media/prevArrow.1752ae9160db5265a941d6120fcaeadb.svg",
-    "main.bbe8c285.css.map": "/react-simbirsoft-restapi/static/css/main.bbe8c285.css.map",
+    "main.afeae0fc.css.map": "/react-simbirsoft-restapi/static/css/main.afeae0fc.css.map",
     "main.47188704.js.map": "/react-simbirsoft-restapi/static/js/main.47188704.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbe8c285.css",
+    "static/css/main.afeae0fc.css",
     "static/js/main.47188704.js"
   ]
 }
