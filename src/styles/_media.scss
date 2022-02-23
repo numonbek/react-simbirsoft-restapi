@@ -11,6 +11,7 @@
 }
 /* desktop-min */
 @media (max-width: 1440px){
+   
   
 }
 /* tablet */
@@ -21,16 +22,17 @@
         }
     }
     .home{
-        &-left{
-            // padding: 32px 0;
+        &-left{            
             margin: 0 auto;
-            width: 57.5%;
-            // min-width: 550px;
+            width: 57.5%;         
         }
         &-right{
             max-width: 410px;
             width: 100%;
         }
+    }
+    .button-prev, .button-next{
+        width: 32px;
     }
     
 
@@ -44,6 +46,11 @@
         }
         &-right{
             display: none;
+        }
+    }
+    .navbar-active{
+        .navbar{
+            max-width: 100%;
         }
     }
 
@@ -80,9 +87,7 @@
             left: 0;
         }
 
-        h3{
-            // font-style: normal;
-            // font-weight: 500;
+        h3{           
             font-size: 22px;
             line-height: 40px;
         }
@@ -96,6 +101,9 @@
     }
 
     .burger{
+        &-block{
+            top:16px;
+        }
         & span{
             background: $black;
         }
@@ -110,6 +118,9 @@
                 padding-top: 32px;
             }
             
+        }
+        &-block{
+            padding-top:16px;
         }
     }
     .footer{
