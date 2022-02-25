@@ -3,10 +3,10 @@ import { Outlet } from 'react-router-dom';
 import { Navbar } from 'components';
 import './Layout.module.scss';
 
-const Layout = (props) => {
+const Layout = ({ navRef }) => {
   return (
     <React.Fragment>
-      <Navbar />
+      <Navbar navRef={navRef} />
       <main className="layout-main container">
         <Outlet />
       </main>

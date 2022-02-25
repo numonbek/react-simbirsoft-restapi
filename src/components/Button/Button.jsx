@@ -2,8 +2,7 @@ import React from 'react';
 import './Button.module.scss';
 import cn from 'classnames';
 
-const Button = (props) => {
-  const { onClick, classes, width, height } = props;
+const Button = ({ classes, width, height, ...props }) => {
   return (
     <React.Fragment>
       <button style={{ maxWidth: width, minHeight: height }} className={cn('btn', classes)}>

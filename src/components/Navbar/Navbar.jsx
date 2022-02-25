@@ -3,16 +3,16 @@ import { Facebook, Instagram, Telegram } from 'assets/svg/icon';
 import { NavLink } from 'react-router-dom';
 import './Navbar.module.scss';
 
-const setActive = ({ isActive }) => (isActive ? 'nav-link nav-link-active' : 'nav-link');
-
-const Navbar = (props) => {
+const Navbar = ({ navRef }) => {
   const [burger, setBurger] = React.useState(false);
+
+  const setActive = ({ isActive }) => (isActive ? 'nav-link nav-link-active' : 'nav-link');
 
   function handleBurger() {
     setBurger(!burger);
-    const toggleActive = document.querySelector('.App');
-    toggleActive.classList.toggle('navbar-active');
+    navRef.current.classList.toggle('navbar-active');
   }
+
   return (
     <React.Fragment>
       <div className="navbar-wrapper">

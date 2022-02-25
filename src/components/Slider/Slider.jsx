@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navigation, Pagination, A11y } from 'swiper';
+import { Navigation, Pagination, A11y, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Button, NextButton, PrevButton } from 'components';
 import { Link } from 'react-router-dom';
@@ -13,9 +13,13 @@ const Slider = () => {
   return (
     <Swiper
       // install Swiper modules
-      modules={[Navigation, Pagination, A11y]}
+      modules={[Navigation, Pagination, A11y, Autoplay]}
       spaceBetween={50}
       slidesPerView={1}
+      autoplay={{
+        delay: 1500,
+        disableOnInteraction: false,
+      }}
       navigation
       pagination={{
         bulletClass: 'swiper-pagination-bullet',
@@ -26,11 +30,7 @@ const Slider = () => {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
         disabledClass: 'disable',
-      }}
-      // scrollbar={{ draggable: true }}
-      // onSwiper={(swiper) => console.log(swiper)}
-      // onSlideChange={() => console.log('slide change')}
-    >
+      }}>
       {slideData.map((item, index) => (
         <SwiperSlide key={`${item}__${index}`}>
           <div className="slide-services">
