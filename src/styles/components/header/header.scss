@@ -1,0 +1,26 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    &-title{ 
+        // font-style: normal;
+        // font-weight: bold; 
+        // @include adaptiv-value("font-size", 30, 18, 1);
+        // @include adaptiv-value("line-height", 35, 20, 1);
+        color: $green;
+    }
+}
+
+/* location */
+.location{
+    display: flex;
+    align-items: center;
+    &-icon{
+        display: flex;
+    }
+    &-city{
+        padding-left: 7.5px;
+        @include adaptiv-value("font-size", 14, 8, 1);
+        @include adaptiv-value("line-height", 16, 8, 1);
+    }
+}
