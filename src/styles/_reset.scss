@@ -3,13 +3,15 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  
 }
 
 /* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-  padding: 0;
-}
+// ul[class],
+// ol[class] {
+//   padding: 0;
+ 
+// }
 
 /* Убираем внешние отступы */
 body,
@@ -29,6 +31,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+
 }
 
 /* Выставляем основные настройки по-умолчанию для body */
@@ -62,4 +65,10 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+ul, ol, li{
+  padding: 0;
+  margin:0;
+  list-style: none;
 }

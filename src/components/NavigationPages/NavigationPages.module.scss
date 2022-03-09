@@ -1,0 +1,42 @@
+/* nav lists */
+.nav{
+    display: flex;
+    align-items: center;
+   
+}
+/* list */
+.list{
+    display: flex;
+    align-items: center;
+    &:not(:last-child){
+        &::after{
+            display: block;
+            content: '';
+            width: 6px;
+            height: 8px;
+            margin: 0px 16px;
+            background: #999999;
+            clip-path: polygon(100% 50%, 0 0, 0 100%);
+        }
+    }
+}
+/* link */
+.link{}
+.disable{
+    pointer-events: none;
+}
+
+
+.active{
+    color: green !important;
+}
+.default{
+    color: black;
+}
+
+
+
+
+
+
+

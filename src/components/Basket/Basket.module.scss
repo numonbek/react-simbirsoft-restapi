@@ -1,0 +1,60 @@
+.basket{
+
+}
+.title, .total{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;    
+    color: #121212;
+}
+
+.title{
+    text-align: right;
+}
+.price{}
+
+.body{
+    padding-top: 26px;
+}
+.info{
+    display: flex;
+    &:not(:first-child){
+        padding-top:16px;
+    }
+}
+.type{
+    display: flex;
+    width: auto;  
+    max-width: 145px;
+    text-align: start;
+    justify-content: start;
+    align-items: end;
+    color: #121212;
+}
+.dotted{
+    border-bottom: 2px dotted;
+    text-align: center;
+    flex: 1;
+    margin: 0 12px;
+}
+.select{
+    text-align: end;
+    justify-content: end;
+    display: flex;
+    align-items: end;
+    max-width: 110px;
+    width: auto;
+}
+
+.total{
+}
+
+.btn{
+   display: block;
+}
+
+.total, .btn{
+    padding-top: 32px;
+}

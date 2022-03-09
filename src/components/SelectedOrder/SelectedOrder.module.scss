@@ -1,0 +1,59 @@
+.car{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 116.32px;
+}
+.info{
+    & div:not(:first-child){
+        margin-top: 8px;
+    }
+}
+.carName{       
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #121212;
+}
+.numberCar{  
+    font-style: normal;
+    font-weight: normal;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+    border: 1px solid #999999;  
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background: #2d93f1;
+        border-color: #2d93f1;
+        color:white;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+}
+.oilStatus{}
+.dateOfStart{}
+.dateOfStart, .oilStatus{
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #121212;
+}
+
+.strong{   
+    font-weight: bold;
+   
+}
+
+.photo{}
+
+.img{
+    max-width: 256px;
+    width: 100%;
+    min-height: 116.36;
+    max-height: 116.36px;
+    height: 100%;
+}

@@ -1,3 +1,4 @@
+import Map from 'components/Map/Map';
 import React from 'react';
 import './Insurance.module.scss';
 

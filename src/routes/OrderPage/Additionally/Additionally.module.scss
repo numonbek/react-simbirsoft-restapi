@@ -1,0 +1,49 @@
+.additional{}
+.colors{}
+.text{
+    color: #121212;
+}
+.colorsBlock{
+    display: flex;
+    margin-left: -16px;
+    flex-wrap: wrap;
+    padding-top: 16px;
+}
+.type{
+    padding-left: 16px;
+}
+.dateRent{
+    padding-top: 32px;
+}
+.dateInputs{
+    padding-top: 16px;
+    display: grid;
+    grid-gap: 13px;
+}
+.start{
+    display: grid;
+    grid-template-columns: minmax(18px, 18px) 1fr;
+    grid-gap: 5px;
+    align-items: center;
+}
+.input{}
+.end{}
+.tariffs{
+    padding-top: 32px;
+}
+.tariffBlock{}
+
+
+.services{    
+    padding-top: 32px;
+}
+.servicesBlock{
+    
+}
+
+.tariffBlock, .servicesBlock{
+    padding-top: 16px;
+    & div:not(:first-child){
+        padding-top: 8px;
+    }
+}

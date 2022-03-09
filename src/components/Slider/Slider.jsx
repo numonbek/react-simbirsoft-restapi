@@ -14,7 +14,7 @@ const Slider = () => {
     <Swiper
       // install Swiper modules
       modules={[Navigation, Pagination, A11y, Autoplay]}
-      spaceBetween={50}
+      spaceBetween={0}
       slidesPerView={1}
       autoplay={{
         delay: 1500,
@@ -43,7 +43,7 @@ const Slider = () => {
                 </div>
                 <div className="description">{item.description}</div>
               </div>
-              <Link to={`/react-simbirsoft-restapi/${item.path}`} className="details">
+              <Link to={`/${item.path}`} className="details">
                 <Button classes={['btn--wm', `btn--${item.path}`]}>Подробнее</Button>
               </Link>
             </div>

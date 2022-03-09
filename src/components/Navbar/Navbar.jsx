@@ -28,42 +28,27 @@ const Navbar = ({ navRef }) => {
           <div className="navbar-block">
             <ul className="nav">
               <li className="nav-list">
-                <NavLink
-                  to={`/react-simbirsoft-restapi/`}
-                  className={setActive}
-                  onClick={handleBurger}>
+                <NavLink to={`/`} className={setActive} onClick={handleBurger}>
                   <h3>ГЛАВНАЯ</h3>
                 </NavLink>
               </li>
               <li className="nav-list">
-                <NavLink
-                  to={`/react-simbirsoft-restapi/parking`}
-                  className={setActive}
-                  onClick={handleBurger}>
+                <NavLink to={`/parking`} className={setActive} onClick={handleBurger}>
                   <h3>ПАРКОВКА</h3>
                 </NavLink>
               </li>
               <li className="nav-list">
-                <NavLink
-                  to={`/react-simbirsoft-restapi/insurance`}
-                  className={setActive}
-                  onClick={handleBurger}>
+                <NavLink to={`/insurance`} className={setActive} onClick={handleBurger}>
                   <h3>СТРАХОВКА</h3>
                 </NavLink>
               </li>
               <li className="nav-list">
-                <NavLink
-                  to={`/react-simbirsoft-restapi/business`}
-                  className={setActive}
-                  onClick={handleBurger}>
+                <NavLink to={`/business`} className={setActive} onClick={handleBurger}>
                   <h3>БЕНЗИН</h3>
                 </NavLink>
               </li>
               <li className="nav-list">
-                <NavLink
-                  to={`/react-simbirsoft-restapi/service`}
-                  className={setActive}
-                  onClick={handleBurger}>
+                <NavLink to={`/service`} className={setActive} onClick={handleBurger}>
                   <h3>ОБСЛУЖИВАНИЕ</h3>
                 </NavLink>
               </li>

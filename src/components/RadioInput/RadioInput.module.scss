@@ -1,0 +1,46 @@
+.radio{
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.label{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.input{
+    position: absolute; 
+    opacity: 0;      
+}
+.input:checked ~ .customBlock{
+    color: #121212;
+    .customRadio{
+        border: 3px solid #0EC261;
+        width: 12px;
+        height: 12px;
+       
+    }
+   
+}
+
+.customBlock{
+    display: flex;
+}
+    
+.customRadio{
+    border: 1px solid #999999;    
+    width: 12px;
+    height: 12px;
+    display: block;
+    border-radius: 50%;
+    transition: all 0.35s ease-in-out;
+}
+
+.text{
+    padding-left: 8px;
+    
+}

@@ -1,3 +1,4 @@
+
 body {
   
   font-family: $font-family-Roboto;
@@ -74,6 +75,34 @@ h6{
   @include adaptiv-value("line-height", 15, 9, 1); 
 }
 
+.font-style{
+  &-theme{
+    &--s{
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: 300;
+      @include adaptiv-value("font-size", 14, 10, 1);
+      @include adaptiv-value("line-height", 16, 12, 1);      
+    }
+
+  }
+}
+
+.customInput{
+  &-theme{
+    &-text{
+
+    }
+    &-input{
+
+    }
+    &--default{
+
+    }
+  }
+
+}
+
 /* color themes */
 .color{
   &--green{
@@ -81,5 +110,8 @@ h6{
   }
   &--black{
     color: $black;
+  }
+  &--grayLight{
+
   }
 }

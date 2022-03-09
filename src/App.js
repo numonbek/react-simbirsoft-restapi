@@ -2,24 +2,42 @@
 import { Layout } from 'layout';
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
-import { Business, Home, Insurance, Parking, Services } from 'routes';
+import {
+  Additionally,
+  Business,
+  CarModel,
+  Home,
+  Insurance,
+  OrderPage,
+  Parking,
+  Services,
+  StoreLocation,
+  TotalBasket,
+} from 'routes';
+import { observer } from 'mobx-react-lite';
 import './App.css';
 
-function App() {
+const App = observer(() => {
   const navRef = React.useRef(null);
   return (
     <div className="App" ref={navRef}>
       <Routes>
-        <Route path="/react-simbirsoft-restapi/" element={<Layout navRef={navRef} />}>
+        <Route path="/" element={<Layout navRef={navRef} />}>
           <Route index element={<Home />} />
-          <Route path="/react-simbirsoft-restapi/parking" element={<Parking />} />
-          <Route path="/react-simbirsoft-restapi/insurance" element={<Insurance />} />
-          <Route path="/react-simbirsoft-restapi/business" element={<Business />} />
-          <Route path="/react-simbirsoft-restapi/service" element={<Services />} />
+          <Route path="/parking" element={<Parking />} />
+          <Route path="/insurance" element={<Insurance />} />
+          <Route path="/business" element={<Business />} />
+          <Route path="/service" element={<Services />} />
+          <Route path="/order" element={<OrderPage />}>
+            <Route index element={<StoreLocation />} />
+            <Route path="carModel" index element={<CarModel />} />
+            <Route path="carModel/additionally" index element={<Additionally />} />
+            <Route path="carModel/additionally/totalbasket" index element={<TotalBasket />} />
+          </Route>
         </Route>
       </Routes>
     </div>
   );
-}
+});
 
 export default App;
