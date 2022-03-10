@@ -52,6 +52,11 @@ const Navbar = ({ navRef }) => {
                   <h3>ОБСЛУЖИВАНИЕ</h3>
                 </NavLink>
               </li>
+              <li className="nav-list">
+                <NavLink to={`/order`} className={setActive} onClick={handleBurger}>
+                  <h3>СТРАНИЦА ЗАКАЗА</h3>
+                </NavLink>
+              </li>
             </ul>
             <div className="socials">
               <div className="telegram">

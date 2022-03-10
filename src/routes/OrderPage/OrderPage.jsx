@@ -8,22 +8,22 @@ import { ArrowFill } from 'assets/svg/icon';
 const pageDate = [
   {
     name: 'Местоположение',
-    page: '/react-simbirsoft-restapi/order',
+    page: '/order',
     active: true,
   },
   {
     name: 'Модель',
-    page: '/react-simbirsoft-restapi/carModel',
+    page: 'carModel',
     active: false,
   },
   {
     name: 'Дополнительно',
-    page: '/react-simbirsoft-restapi/carModel/additionally',
+    page: 'carModel/additionally',
     active: false,
   },
   {
     name: 'Итого',
-    page: '/react-simbirsoft-restapi/carModel/additionally/totalbasket',
+    page: 'carModel/additionally/totalbasket',
     active: false,
   },
 ];
@@ -41,12 +41,12 @@ const OrderPage = observer(() => {
       </div>
       <div className="order-page__navbar">
         <div className="order-page-container">
-          {/* <NavigationPages
+          <NavigationPages
             pages={pageDate}
             classes={['d']}
             setNavIndex={setNavIndex}
             navIndex={navIndex}
-          /> */}
+          />
         </div>
       </div>
       <div className="order-page__body order-page-container font-style-theme--s">

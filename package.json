@@ -1,7 +1,7 @@
 {
   "name": "1-day",
   "version": "0.1.0",
-  "homepage": "https://numonbek.github.io/react-simbirsoft-restapi",
+  "homepage": "https://jundev.ru/",
   "private": true,
   "dependencies": {
     "@react-google-maps/api": "^2.7.0",
