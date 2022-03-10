@@ -8,22 +8,22 @@ import { ArrowFill } from 'assets/svg/icon';
 const pageDate = [
   {
     name: 'Местоположение',
-    page: '/order',
+    page: '/react-simbirsoft-restapi/order',
     active: true,
   },
   {
     name: 'Модель',
-    page: 'carModel',
+    page: '/react-simbirsoft-restapi/carModel',
     active: false,
   },
   {
     name: 'Дополнительно',
-    page: 'carModel/additionally',
+    page: '/react-simbirsoft-restapi/carModel/additionally',
     active: false,
   },
   {
     name: 'Итого',
-    page: 'carModel/additionally/totalbasket',
+    page: '/react-simbirsoft-restapi/carModel/additionally/totalbasket',
     active: false,
   },
 ];

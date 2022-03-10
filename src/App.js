@@ -30,9 +30,17 @@ const App = observer(() => {
           <Route path="/react-simbirsoft-restapi/service" element={<Services />} />
           <Route path="/react-simbirsoft-restapi/order" element={<OrderPage />}>
             <Route index element={<StoreLocation />} />
-            <Route path="carModel" index element={<CarModel />} />
-            <Route path="carModel/additionally" index element={<Additionally />} />
-            <Route path="carModel/additionally/totalbasket" index element={<TotalBasket />} />
+            <Route path="/react-simbirsoft-restapi/carModel" index element={<CarModel />} />
+            <Route
+              path="/react-simbirsoft-restapi/carModel/additionally"
+              index
+              element={<Additionally />}
+            />
+            <Route
+              path="/react-simbirsoft-restapi/carModel/additionally/totalbasket"
+              index
+              element={<TotalBasket />}
+            />
           </Route>
         </Route>
       </Routes>
