@@ -28,7 +28,7 @@ const App = observer(() => {
           <Route path="/react-simbirsoft-restapi/insurance" element={<Insurance />} />
           <Route path="/react-simbirsoft-restapi/business" element={<Business />} />
           <Route path="/react-simbirsoft-restapi/service" element={<Services />} />
-          {/* <Route path="/react-simbirsoft-restapi/order" element={<OrderPage />}>
+          <Route path="/react-simbirsoft-restapi/order" element={<OrderPage />}>
             <Route index element={<StoreLocation />} />
             <Route path="/react-simbirsoft-restapi/carModel" index element={<CarModel />} />
             <Route
@@ -41,7 +41,7 @@ const App = observer(() => {
               index
               element={<TotalBasket />}
             />
-          </Route> */}
+          </Route>
         </Route>
       </Routes>
     </div>
