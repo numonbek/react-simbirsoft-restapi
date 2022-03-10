@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-simbirsoft-restapi/static/css/main.f4d5c362.css",
-    "main.js": "/react-simbirsoft-restapi/static/js/main.e467d71b.js",
+    "main.js": "/react-simbirsoft-restapi/static/js/main.a8e20b72.js",
     "static/media/Roboto-Medium.ttf": "/react-simbirsoft-restapi/static/media/Roboto-Medium.7429a63c09f79a1760b0.ttf",
     "static/media/Roboto-Regular.ttf": "/react-simbirsoft-restapi/static/media/Roboto-Regular.a8d6ac03c7b96b7acb62.ttf",
     "static/media/Roboto-Bold.ttf": "/react-simbirsoft-restapi/static/media/Roboto-Bold.75371f53f06181df75f1.ttf",
@@ -22,10 +22,10 @@
     "static/media/prevArrow.svg": "/react-simbirsoft-restapi/static/media/prevArrow.1752ae9160db5265a941d6120fcaeadb.svg",
     "static/media/arrowfill.svg": "/react-simbirsoft-restapi/static/media/arrowfill.ce81e7425fdbcb8e18e8475e250c5da8.svg",
     "main.f4d5c362.css.map": "/react-simbirsoft-restapi/static/css/main.f4d5c362.css.map",
-    "main.e467d71b.js.map": "/react-simbirsoft-restapi/static/js/main.e467d71b.js.map"
+    "main.a8e20b72.js.map": "/react-simbirsoft-restapi/static/js/main.a8e20b72.js.map"
   },
   "entrypoints": [
     "static/css/main.f4d5c362.css",
-    "static/js/main.e467d71b.js"
+    "static/js/main.a8e20b72.js"
   ]
 }
