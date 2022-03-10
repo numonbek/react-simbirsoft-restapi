@@ -22,13 +22,13 @@ const App = observer(() => {
   return (
     <div className="App" ref={navRef}>
       <Routes>
-        <Route path="/" element={<Layout navRef={navRef} />}>
+        <Route path="/react-simbirsoft-restapi/" element={<Layout navRef={navRef} />}>
           <Route index element={<Home />} />
-          <Route path="/parking" element={<Parking />} />
-          <Route path="/insurance" element={<Insurance />} />
-          <Route path="/business" element={<Business />} />
-          <Route path="/service" element={<Services />} />
-          <Route path="/order" element={<OrderPage />}>
+          <Route path="/react-simbirsoft-restapi/parking" element={<Parking />} />
+          <Route path="/react-simbirsoft-restapi/insurance" element={<Insurance />} />
+          <Route path="/react-simbirsoft-restapi/business" element={<Business />} />
+          <Route path="/react-simbirsoft-restapi/service" element={<Services />} />
+          <Route path="/react-simbirsoft-restapi/order" element={<OrderPage />}>
             <Route index element={<StoreLocation />} />
             <Route path="carModel" index element={<CarModel />} />
             <Route path="carModel/additionally" index element={<Additionally />} />

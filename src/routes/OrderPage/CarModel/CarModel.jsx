@@ -15,12 +15,6 @@ const CarModel = () => {
         ))}
       </div>
       <ul className={clx.cars}>
-        {/* <li className={clx.car}>
-          <CardCars />
-        </li> */}
-        {/* <li className={clx.car}>
-          <CardCars />
-        </li>
         <li className={clx.car}>
           <CardCars />
         </li>
@@ -29,7 +23,13 @@ const CarModel = () => {
         </li>
         <li className={clx.car}>
           <CardCars />
-        </li> */}
+        </li>
+        <li className={clx.car}>
+          <CardCars />
+        </li>
+        <li className={clx.car}>
+          <CardCars />
+        </li>
       </ul>
     </React.Fragment>
   );

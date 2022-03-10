@@ -6,12 +6,7 @@ const CardCars = () => {
   return (
     <React.Fragment>
       <label className={clx.card}>
-        <input
-          type="checkbox"
-          name="car"
-          onChange={(e) => console.log(e.target)}
-          className={clx.select}
-        />
+        <input type="checkbox" name="car" className={clx.select} />
         <span className={clx.car}>
           <span className={clx.header}>
             <sapn className={clx.name}>ELANTRA</sapn>

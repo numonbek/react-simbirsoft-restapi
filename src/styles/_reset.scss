@@ -6,12 +6,6 @@
   
 }
 
-/* Убираем внутренние отступы */
-// ul[class],
-// ol[class] {
-//   padding: 0;
- 
-// }
 
 /* Убираем внешние отступы */
 body,
@@ -39,7 +33,7 @@ body {
   min-height: 100vh;
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-//   line-height: 1.5;
+
 }
 
 /* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/

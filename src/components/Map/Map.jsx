@@ -6,11 +6,6 @@ const containerStyle = {
   height: '100%',
 };
 
-// const center = {
-//   lat: -3.745,
-//   lng: -38.523,
-// };
-
 const Map = ({ center }) => {
   const mapRef = React.useRef(undefined);
 
@@ -18,8 +13,6 @@ const Map = ({ center }) => {
     id: 'google-map-script',
     googleMapsApiKey: API_KEY_GOOGLE_MAP,
   });
-
-  //   const [map, setMap] = React.useState(null);
 
   const onLoad = React.useCallback(function callback(map) {
     mapRef.current = map;

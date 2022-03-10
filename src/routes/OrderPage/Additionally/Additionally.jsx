@@ -27,23 +27,13 @@ const Additionally = () => {
             <div className={cn(clx.start, 'color--black')}>
               <div className={clx.text}>C</div>
               <div className={clx.input}>
-                <CustomInput
-                  maxWidth="224px"
-                  placeholder="Начните вводить город ..."
-                  name="city"
-                  // setInpValues={dsd}
-                />
+                <CustomInput maxWidth="224px" placeholder="Начните вводить город ..." name="city" />
               </div>
             </div>
             <div className={cn(clx.end, clx.start, 'color--black')}>
               <div className={clx.text}>По</div>
               <div className={clx.input}>
-                <CustomInput
-                  maxWidth="224px"
-                  placeholder="Начните вводить город ..."
-                  name="city"
-                  // setInpValues={dsd}
-                />
+                <CustomInput maxWidth="224px" placeholder="Начните вводить город ..." name="city" />
               </div>
             </div>
           </div>

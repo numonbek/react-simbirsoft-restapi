@@ -13,23 +13,13 @@ const StoreLocation = () => {
         <div className={cn(clx.inputBlock, 'color--black')}>
           <div className={clx.text}>Город</div>
           <div className={clx.input}>
-            <CustomInput
-              maxWidth="224px"
-              placeholder="Начните вводить город ..."
-              name="city"
-              // setInpValues={dsd}
-            />
+            <CustomInput maxWidth="224px" placeholder="Начните вводить город ..." name="city" />
           </div>
         </div>
         <div className={cn(clx.inputBlock, 'color--black')}>
           <div className={clx.text}>Пункт выдачи</div>
           <div className={clx.input}>
-            <CustomInput
-              maxWidth="224px"
-              placeholder="Начните вводить пункт ..."
-              name="location"
-              // setInpValues={dsd}
-            />
+            <CustomInput maxWidth="224px" placeholder="Начните вводить пункт ..." name="location" />
           </div>
         </div>
       </div>
@@ -41,7 +31,6 @@ const StoreLocation = () => {
           </div>
         </div>
       </div>
-      {/* <h1>StoreLocation</h1> */}
     </div>
   );
 };

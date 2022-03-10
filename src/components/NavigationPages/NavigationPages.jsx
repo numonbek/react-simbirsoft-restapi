@@ -5,10 +5,6 @@ import clx from './NavigationPages.module.scss';
 import { v4 as uuidv4 } from 'uuid';
 
 const NavigationPages = ({ pages, classes, setNavIndex, navIndex }) => {
-  // let [params, setParams] = useMatch();
-  // console.log(params);
-  // const setActive = ({isActive})=>isActive?
-  // pages.length
   const nav = cn({
     classes,
   });

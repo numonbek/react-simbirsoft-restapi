@@ -62,29 +62,3 @@ const OrderPage = observer(() => {
 });
 
 export { OrderPage };
-
-/* 
- <button onClick={() => dec()}>asdfasfa{count}</button>
-      {
-        <label>
-          {city !== '' ? <div className="delete">X</div> : null}
-          <input
-            type="text"
-            name="city"
-            value={city}
-            onChange={(e) => setInpValues(e.target.name, e.target.value)}
-            placeholder="Начните вводить пункт ..."
-          />
-        </label>
-      }
-      <label>
-        {pointIssue !== '' ? <div>sifojsdif</div> : null}
-        <input
-          type="text"
-          name="pointIssue"
-          value={pointIssue}
-          onChange={(e) => setInpValues(e.target.name, e.target.value)}
-          placeholder="Начните вводить пункт ..."
-        />
-      </label>
-*/

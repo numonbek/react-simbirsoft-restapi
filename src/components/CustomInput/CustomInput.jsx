@@ -25,7 +25,6 @@ const CustomInput = ({
   function setInpValues(target) {
     setValue(target.value);
     setNameInp(target.name);
-    // getInpValues(target.name, target.value)
   }
 
   const clxObj = {
