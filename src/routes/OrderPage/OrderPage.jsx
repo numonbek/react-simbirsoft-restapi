@@ -41,12 +41,12 @@ const OrderPage = observer(() => {
       </div>
       <div className="order-page__navbar">
         <div className="order-page-container">
-          <NavigationPages
+          {/* <NavigationPages
             pages={pageDate}
             classes={['d']}
             setNavIndex={setNavIndex}
             navIndex={navIndex}
-          />
+          /> */}
         </div>
       </div>
       <div className="order-page__body order-page-container font-style-theme--s">
