@@ -8,7 +8,7 @@ const Button = ({ classes, width, height, onClick, ...props }) => {
       <button
         style={{ maxWidth: width, minHeight: height }}
         className={cn('btn', classes)}
-        onClick={() => console.log('click')}
+       
         disabled={props.disabled}>
         {props.children}
       </button>
