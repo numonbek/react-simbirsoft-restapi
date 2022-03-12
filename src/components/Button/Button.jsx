@@ -7,8 +7,7 @@ const Button = ({ classes, width, height, onClick, ...props }) => {
     <React.Fragment>
       <button
         style={{ maxWidth: width, minHeight: height }}
-        className={cn('btn', classes)}
-       
+        className={cn('btn', classes)}       
         disabled={props.disabled}>
         {props.children}
       </button>
