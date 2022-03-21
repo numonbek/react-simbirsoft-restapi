@@ -33,3 +33,30 @@
         color:    #999999;
      }
 }
+
+
+.lists{
+    position: absolute;
+    top: 110%;
+    background: rgb(255, 255, 255);
+    width: 100%;   
+    border: 1px solid #0EC261;
+    z-index: 2;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+.list{
+    // font-weight: 700;
+    padding: 8px 10px;
+    cursor:pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color:#0EC261;
+        color: #fff;
+    }
+    
+}
+
+.listsItem{
+    font-weight: 450;
+}

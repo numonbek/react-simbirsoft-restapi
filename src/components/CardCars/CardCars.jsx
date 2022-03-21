@@ -9,8 +9,8 @@ const CardCars = () => {
         <input type="checkbox" name="car" className={clx.select} />
         <span className={clx.car}>
           <span className={clx.header}>
-            <sapn className={clx.name}>ELANTRA</sapn>
-            <sapn className={clx.price}>12 000 - 25 000 ₽</sapn>
+            <span className={clx.name}>ELANTRA</span>
+            <span className={clx.price}>12 000 - 25 000 ₽</span>
           </span>
           <span className={clx.body}>
             <img src={CarImg01} alt="car name" className={clx.img} />

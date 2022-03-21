@@ -1,6 +1,6 @@
 import { makeAutoObservable } from 'mobx';
 
-export default class Total {
+export default class Additiona {
   flag = false;
   constructor() {
     makeAutoObservable(this);

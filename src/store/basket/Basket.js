@@ -1,8 +1,13 @@
 import { makeAutoObservable } from 'mobx';
 
-class Basket {
+export default class Basket {
+  hh = 0;
+
   constructor() {
     makeAutoObservable(this);
   }
+
+  inc() {
+    this.hh++;
+  }
 }
-export const StoreBasket = new Basket();

@@ -19,6 +19,7 @@ import './App.css';
 
 const App = observer(() => {
   const navRef = React.useRef(null);
+
   return (
     <div className="App" ref={navRef}>
       <Routes>

@@ -1,10 +1,10 @@
 const API_KEY_GOOGLE_MAP = process.env.REACT_APP_API_KEY_GOOGLE_MAP;
 
-const API_URL = `https://api.football-data.org/v2`;
+const API_URL = process.env.REACT_APP_API_URL;
 
-const HEADER = {
-  //   headers: {
-  //     'X-Auth-Token': ,
-  //   },
+const HEADERS = {
+  headers: {
+    'X-Api-Factory-Application-Id': process.env.REACT_APP_USER_TOKEN,
+  },
 };
-export { API_URL, HEADER, API_KEY_GOOGLE_MAP };
+export { API_URL, HEADERS, API_KEY_GOOGLE_MAP };

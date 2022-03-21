@@ -28,9 +28,9 @@
     display: flex;
     width: auto;  
     max-width: 145px;
-    text-align: start;
-    justify-content: start;
-    align-items: end;
+    text-align: flex-start;
+    justify-content: flex-start;
+    align-items: flex-end;
     color: #121212;
 }
 .dotted{
@@ -40,10 +40,10 @@
     margin: 0 12px;
 }
 .select{
-    text-align: end;
-    justify-content: end;
+    text-align: flex-end;
+    justify-content: flex-end;
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     max-width: 110px;
     width: auto;
 }
