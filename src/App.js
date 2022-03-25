@@ -16,12 +16,15 @@ import {
 } from 'routes';
 import { observer } from 'mobx-react-lite';
 import './App.css';
+import { useStore } from 'hooks/useStore';
 
 const App = observer(() => {
+  const { location } = useStore();
   const navRef = React.useRef(null);
 
   return (
     <div className="App" ref={navRef}>
+      <button onClick={() => console.log(location.dataPointCoords)}></button>
       <Routes>
         <Route path="/" element={<Layout navRef={navRef} />}>
           <Route index element={<Home />} />

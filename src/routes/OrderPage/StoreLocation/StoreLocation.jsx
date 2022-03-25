@@ -23,8 +23,9 @@ const StoreLocation = observer(() => {
     location.fetchPoint();
   }, []);
 
-  console.log(location.cityData);
-  console.log(location.pointData);
+  // console.log(location.cityData);
+  // console.log(location.pointData);
+
   return (
     <div className={clx.location}>
       <div className={clx.header}>
@@ -35,7 +36,7 @@ const StoreLocation = observer(() => {
               maxWidth="224px"
               placeholder="Начните вводить город ..."
               name="city"
-              data={location.cityData}
+              data={location.filterCity()}
             />
           </div>
         </div>
@@ -45,8 +46,8 @@ const StoreLocation = observer(() => {
             <CustomInput
               maxWidth="224px"
               placeholder="Начните вводить пункт ..."
-              name="location"
-              data={location.pointData}
+              name="point"
+              data={location.filterPoint()}
             />
           </div>
         </div>

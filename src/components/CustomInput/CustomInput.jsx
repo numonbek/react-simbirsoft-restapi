@@ -30,7 +30,7 @@ const CustomInput = observer(
     const [array, setArray] = React.useState([]);
     const inputRef = React.useRef(null);
     const { location } = useStore();
-
+    // console.log(data);
     React.useEffect(() => {
       document.body.addEventListener('click', outsideClick);
     }, []);
@@ -44,9 +44,10 @@ const CustomInput = observer(
     function setInpValues(target) {
       setValue(target.value);
       setNameInp(target.name);
-      location.setObjName(nameInp, value);
-      console.log(location.Obj);
     }
+    // console.log(location.Obj);
+    // console.log(value);
+    // console.log(nameInp);
 
     const clxObj = {
       labelClasses: cn(
@@ -74,17 +75,16 @@ const CustomInput = observer(
         inputClx,
       ),
     };
-    console.log(data);
 
-    const search = (data, inpValue) => {
-      return setArray(
-        data.filter(
-          (inp) =>
-            inp.name.toLowerCase().indexOf(inpValue) > -1 ||
-            inp.address.toLowerCase().indexOf(inpValue) > -1,
-        ),
-      );
-    };
+    // const search = (data, inpValue) => {
+    //   return setArray(
+    //     data.filter(
+    //       (inp) =>
+    //         inp.name.toLowerCase().indexOf(inpValue) > -1 ||
+    //         inp.address.toLowerCase().indexOf(inpValue) > -1,
+    //     ),
+    //   );
+    // };
 
     return (
       <React.Fragment>
@@ -106,12 +106,13 @@ const CustomInput = observer(
           ) : null}
           <input
             type={type || 'text'}
-            name={name || 'city'}
+            name={name || ''}
             value={value}
             onChange={(e) => (
               setInpValues(e.target),
               !e.target.value && setActive(true),
-              search(data, e.target.value)
+              location.setObjName(e.target.name, e.target.value)
+              // search(data, e.target.value)
             )}
             placeholder={placeholder || 'Начните вводить ...'}
             className={clxObj.inputClasses}
@@ -119,10 +120,10 @@ const CustomInput = observer(
           />
           {!!data && active && (
             <ul className={clx.lists}>
-              {array.length <= 0 ? (
+              {data.length <= 0 ? (
                 <li className={clx.list}>Вашем городе не обслуживаем</li>
               ) : (
-                array.map((el, i) => (
+                data.map((el, i) => (
                   <li
                     key={uuidv4()}
                     className={clx.list}

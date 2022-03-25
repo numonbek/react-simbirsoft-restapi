@@ -43,6 +43,7 @@ const Map = ({ center }) => {
     if (!center) return;
 
     const service = new google.maps.DirectionsService();
+    console.log(service);
     service.route(
       {
         origin: house,
@@ -50,6 +51,7 @@ const Map = ({ center }) => {
         travelMode: google.maps.TravelMode.DRIVING,
       },
       (result, status) => {
+        console.log(result);
         if (status === 'OK' && result) {
           setDirections(result);
         }
