@@ -35,6 +35,11 @@ const CustomInput = observer(
       document.body.addEventListener('click', outsideClick);
     }, []);
 
+    React.useEffect(() => {
+      location.setObjName(nameInp, value);
+      location.getGeocoding();
+    }, [value]);
+
     const outsideClick = (e) => {
       if (!e.path.includes(inputRef.current)) {
         setActive(false);
@@ -44,10 +49,8 @@ const CustomInput = observer(
     function setInpValues(target) {
       setValue(target.value);
       setNameInp(target.name);
+      !target.value && setActive(true);
     }
-    // console.log(location.Obj);
-    // console.log(value);
-    // console.log(nameInp);
 
     const clxObj = {
       labelClasses: cn(
@@ -76,16 +79,6 @@ const CustomInput = observer(
       ),
     };
 
-    // const search = (data, inpValue) => {
-    //   return setArray(
-    //     data.filter(
-    //       (inp) =>
-    //         inp.name.toLowerCase().indexOf(inpValue) > -1 ||
-    //         inp.address.toLowerCase().indexOf(inpValue) > -1,
-    //     ),
-    //   );
-    // };
-
     return (
       <React.Fragment>
         <label
@@ -108,15 +101,12 @@ const CustomInput = observer(
             type={type || 'text'}
             name={name || ''}
             value={value}
-            onChange={(e) => (
-              setInpValues(e.target),
-              !e.target.value && setActive(true),
-              location.setObjName(e.target.name, e.target.value)
-              // search(data, e.target.value)
-            )}
+            onChange={(e) => setInpValues(e.target)}
             placeholder={placeholder || 'Начните вводить ...'}
             className={clxObj.inputClasses}
-            onFocus={(e) => (!!value ? setActive(false) : setActive(true))}
+            onFocus={(e) => (
+              !!value ? setActive(false) : setActive(true), setNameInp(e.target.name)
+            )}
           />
           {!!data && active && (
             <ul className={clx.lists}>
@@ -127,7 +117,9 @@ const CustomInput = observer(
                   <li
                     key={uuidv4()}
                     className={clx.list}
-                    onClick={() => (setValue(el.name), setActive(true))}>
+                    onClick={() => (
+                      setValue(`${el.name}${el.address ? ' ' + el.address : ''}`), setActive(true)
+                    )}>
                     <span className={clx.listsItem}>{el?.name}</span>, &nbsp;
                     <span>{el?.address}</span>
                   </li>

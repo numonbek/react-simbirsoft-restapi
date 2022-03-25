@@ -24,7 +24,7 @@ const App = observer(() => {
 
   return (
     <div className="App" ref={navRef}>
-      <button onClick={() => console.log(location.dataPointCoords)}></button>
+      <button onClick={() => console.log(location.dataObj)}></button>
       <Routes>
         <Route path="/" element={<Layout navRef={navRef} />}>
           <Route index element={<Home />} />

@@ -26,7 +26,7 @@ export default class Loaction {
   }
 
   setObjName(name, value) {
-    if (name && value) {
+    if (name || value) {
       this.Obj = { ...this.Obj, [name]: value };
       this.getGeocoding();
     }
@@ -45,10 +45,12 @@ export default class Loaction {
   }
 
   getGeocoding() {
+    // console.log(this._point);
     this._point.map((el, i) => {
-      if (el?.cityId?.name == this.Obj.city) {
+      if (el?.cityId?.name.toLowerCase() == this.Obj.city.toLowerCase()) {
+        console.log(el?.cityId?.name);
         const address = el.address.split(' ').join('+');
-        this.fetchMarkers(address, el.name, el.cityId.name);
+        this.fetchMarkerCity(el.cityId.name);
       }
     });
   }
@@ -65,10 +67,12 @@ export default class Loaction {
 
   *fetchMarkerCity(city) {
     const marker = yield axios.get(
-      `https://maps.googleapis.com/maps/api/geocode/json?address=${city}&key=${process.env.REACT_APP_API_KEY_GOOGLE_MAP}`,
+      `https://maps.googleapis.com/maps/api/geocode/json?address=${city}&key=AIzaSyDCJNQ1tl97wpTmibe64osn9EV-_yfMBvo`,
     );
+    // console.log(marker);
     this._cityCoords = marker.data.results[0].geometry.location;
     console.log(marker.data.results[0].geometry.location);
+    console.log(this._cityCoords);
   }
 
   *fetchMarkers(address, place, city) {
@@ -87,5 +91,9 @@ export default class Loaction {
   }
   get dataPointCoords() {
     return this._pointCoords;
+  }
+
+  get dataObj() {
+    return this.Obj;
   }
 }
